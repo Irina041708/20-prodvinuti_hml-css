@@ -210,17 +210,17 @@ input, button {
                 box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.21);
                 
                 &__img {
-                    min-height: 306px;
+                    height: 306px;
                     width: 40%;         
                     &__img1 {
-                        min-height: 306px;
+                        height: 306px;
                         width: 100%;
                     }
                 }
         
                 &__cont { 
                     position: relative;
-                    min-height: 306px;
+                    height: 306px;
                     width: 60%;  
                     display: flex;  
                     justify-content: center;            
@@ -230,7 +230,7 @@ input, button {
                         padding-top: 28px;
                     }
                     .padding {
-                        min-height: 306px;
+                        height: 306px;
                         box-sizing: border-box;
                         width: 100%;
                         padding: 22px 97px 62px 31px;
@@ -274,7 +274,8 @@ input, button {
                     min-height: 50px;
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;                  
+                    align-items: center; 
+                    gap: 192px;                 
                     .button {
                         height: 50px;
                         border: 1px solid rgba(164, 164, 164, 1);                             
@@ -298,6 +299,7 @@ input, button {
         &__application {
             max-width: 31.57%;
             padding-top: 17px;
+            box-sizing: border-box;
             height: 998px;
             display: flex;  
             flex-direction: column;   
@@ -306,7 +308,7 @@ input, button {
                 max-width: 100%;
                 justify-content:space-between;
                 flex-wrap: wrap;
-                min-height: 272px;
+                height: 272px;
                 display: flex;
                 gap: 20px;
                 
@@ -318,7 +320,7 @@ input, button {
                 }
                 &__button {
                     width: 100%;
-                    min-height: 45px;
+                    height: 45px;
                     border: 1px solid rgba(164, 164, 164, 1);
                     display: flex;
                     padding-left: 18px;
@@ -337,7 +339,7 @@ input, button {
                     }
                 }
                 &__button1 {
-                    min-height: 35px;
+                    height: 35px;
                     padding: 11px 14px;
                     border: 1px solid rgba(164, 164, 164, 1);
                     box-sizing: border-box;
@@ -350,7 +352,7 @@ input, button {
                 }
             }
             .checkout {
-                min-height: 214px;
+                height: 214px;
                 width: 100%;
                 background: rgba(245, 243, 243, 1);
                 padding: 39px 12.22% 42px 12.22%;
@@ -385,9 +387,10 @@ input, button {
                     background: rgba(241, 109, 127, 1);
                     display: flex;
                     justify-content: center;
+                    flex-direction: row;
+                    align-items: center;
                     &__text {
                         position: relative;
-                        padding: 15px 41px;
                         box-sizing: border-box;
                         font-size: 16px;
                         font-weight: 300;
@@ -401,7 +404,7 @@ input, button {
                     width: 17%;
                     height: 1px;
                     /* располагаем линию сверху от текста */
-                    margin-top: -20px;
+                    margin-top: -80px;
                     /* включаем абсолютное позиционирование относительно блока с relative */
                     position: absolute;
                 }
